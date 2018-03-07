@@ -17,9 +17,11 @@ or just ``` npm run dev ```
 2. docker-compose up -d
 3. There'll be a message on the terminal as
 
+```
 You can now view chat-app in the browser.
 web_1  | [0]
 web_1  | [0]   Local:            http://localhost:****/
 web_1  | [0]   On Your Network:  http://172.**.*.*:****/
+```
 
 4. Go to browser and put the URL mentioned in "Local"
