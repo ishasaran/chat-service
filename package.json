@@ -14,14 +14,15 @@
   },
   "scripts": {
     "start": "node src/server/index.js",
-    "dev": "concurrently 'npm run react' 'npm run server'",
+    "dev": "concurrently 'npm run react' 'npm run debug'",
     "react": "react-scripts start",
     "server": "nodemon src/server/index.js",
     "build": "react-scripts build",
     "styles": "node-sass --output-style compressed --include-path scss src/index.css src/styles/index.scss",
     "styles:w": "nodemon -e scss -x \"npm run styles\"",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "debug": "nodemon --inspect=5858 src/server/index.js"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
